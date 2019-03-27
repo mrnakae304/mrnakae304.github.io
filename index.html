@@ -1,1 +1,190 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<!-- <link rel="stylesheet "href="normalize.css" > -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body >
+  <header>
+    <div class="adjust-header">
+      <div class="call">
+        <a href="tel:+6691-035-8731"><i class="fa fa-phone"></i></a>
+      </div>
+      <ul class="navbar" >
+        <li class="active-nav"><a href="#top" id="about">Intro</a></li>
+        <li><a href="#top" id="project">Project</a></li>
+        <li><a href="#top" id="timeline">My story</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container" >
+    <div class="drawing">
+      <canvas width="600" height="400" class="add-shadow"></canvas>
+      <div class="controls">
+        <ul class="pickColor">
+          <li class="eraser"></li>
+          <li class="red selected"></li>
+          <li class="blue"></li>
+          <li class="yellow"></li>
+        </ul>
+        <button id="revealColorSelect" >New Color</button>
+        <div id="colorSelect">
+          <span id="newColor"></span>
+          <div class="sliders">
+            <p>
+              <label for="red">Red</label>
+              <input id="red" name="red" type="range" min=1 max=254 value=0>
+            </p>
+            <p>
+              <label for="green">Green</label>
+              <input id="green" name="green" type="range" min=1 max=254 value=0>
+            </p>
+            <p>
+              <label for="blue">Blue</label>
+              <input id="blue" name="blue" type="range" min=1 max=254 value=0>
+            </p>
+            <p>
+              <label for="alpha">Alpha</label>
+              <input id="alpha" name="alpha" type="range" min=0 max=100 value=100>
+            </p>
+          </div>
+          <div>
+            <button id="addNewColor">Add Color</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+    <div class="two-column hiding">
+      <div class="right">
+        <div>
+        <h1>Introduction</h1>
+        <P>Hi, I'm Thai my name is Tik, really glad you are here. If you see me you will never believe that I'am developer I have nothing like that Lol. but I can work like developer. at least I still can being build this website I love feedback, comment box is the way that you send can it back to me(not finished yet)</P>
+        </div>
+
+        <div>
+          <h1>About Me</h1>
+          <p>I'm web developer who interested in new technology find the way to improve myself and always learn new to make me up to date</p>
+        </div>
+
+        <div class="skill">
+          <h1>SKILL</h1>
+          <ul>
+            <li>HTML5/CSS3</li>
+            <li>JAVASCRIPT</li>
+            <li>AJAX</li>
+            <li>REACT</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="left">
+        <div class="mypic">
+          <img src="pic/my_portfolio01.png">
+        </div>
+        <div class="contact">
+            <span>CONTACT ME</span>
+          <ul class="contact-icon">
+            <li><a href="tel:+6691-035-8731">
+                <img src="pic/user-avatar-main-picture.svg" >
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/wirawat-posriya-890039146">
+                <img src="pic/linkedin-logo-button.svg">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/perzeus304">
+                <img src="pic/instagram-logo.svg" >
+              </a>
+            </li>
+            <li>
+              <a href="https://web.facebook.com/tik.pekazus">
+                  <img src="pic/facebook-logo-button.svg" >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="grid hiding">
+    	<div class="content content01 animate">
+    	  <h1>HTML + CSS</h1>
+    	  <p>build website by using html and css only<br>shadow animation and more</p>
+        <img src="pic/Custom_Coding-512.png" >
+    	</div >
+
+    	<div class="content content02 animate">
+    	  <h1>HTML + CSS + Javascript (basic website)</h1>
+    	  <p>build website by using html and css and Javascript <br>shadow animation content link to back-end using JSON and AJAX</p>
+        <img src="pic/tempnail01.png">
+    	</div>
+
+    	<div class="content content03 animate">
+    	  <h1>React.js</h1>
+    	  <p>In this part I made single page web application using React.js popular script with virtual DOM technology</p>
+    	</div>
+
+      <div class="content content04 animate">
+        <h1>Javascript MVC + framework</h1>
+        <p>Javascript mvc is the most popular method to munipulate web application and easy maintain one of my favorite skill in this part I replace common javascript code by MVC</p>
+      </div>
+    </div>
+
+    <div class="way hiding" >
+      <div class="gide-section">
+        <div class="gide-line">1</div>
+        <div class="gide-box">
+          <div>
+            <h2>Start</h2>
+            <p>I've started coding about August 2017 with empty brain I found coding and dive in </p>
+          </div>
+        </div>
+      </div>
+      <div class="gide-section">
+        <div class="gide-line">2</div>
+        <div class="gide-box">
+          <div>
+            <h2>Step 2</h2>
+            <p>be front-end developer : I've learn How to code from many place on internet I found many place and then I jump into such as udacity , treehouse , or linkin learning(Linda)</p>
+          </div>
+        </div>
+      </div>
+      <div class="gide-section">
+        <div class="gide-line">3</div>
+        <div class="gide-box">
+          <div>
+              <h2>Into full stack web developer</h2>
+              <p>after finish front-end developer It's like I lost I don't know what to do next I decide to learn some framework but first I want to really understand web technology that navigate me to fullstack developer</p>
+          </div>
+        </div>
+      </div>
+      <div class="gide-section">
+        <div class="gide-line">4</div>
+        <div class="gide-box">
+          <div>
+              <h2>be expert</h2>
+              <p>waiting to fullfill: now I am being interested in polymer libraly and want to be expert in React, So on and so on</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<footer>
+		<span>&copy;copyright</span>
+		<span>Weerawat</span>
+	</footer>
+
+  <script src="jquery-3.2.1.min.js" ></script>
+  <script type="text/javascript" src="script.js" ></script>
+</body>
+</html>
